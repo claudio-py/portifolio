@@ -23,7 +23,9 @@
 body {
   font-size: 1.6rem;
   background: var(--bg-url) no-repeat top center/cover;
+height: 100vh;
 height: 100%;
+
 }
 
 main {
