@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-fon-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/assets/fonts/neue-machina-regular.otf');
+}
+
+body {
+  font-size: 1.6rem;
+
+
+  background-image: url("../dark-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  height: 100%;
+
+
+
+}
+
+main {
+
+
+  padding: 3rem 1rem;
+  border: 2px solid white;
+  border-radius: 16px;
+  max-width: 800px;
+
+}
+
+/* Apply overlay scrollbars to the element with the "scroll-container" class */
+.scroll-container {
+  overflow: overlay;
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff37;
+  border-radius: 5px;
+
+}
