@@ -8,6 +8,14 @@
   color: #fff;
 }
 
+body {
+
+  font-size: 1.6rem;
+
+  background: url(../dark-mobile.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 :root {
   font-size: 62.5%;
 
@@ -17,16 +25,7 @@
   font-family: 'Neue Machina';
   src: url('/assets/fonts/neue-machina-regular.otf');
 }
-.bg{
-  --bg-url: url(../dark-mobile.jpg)
-}
-body {
-  font-size: 1.6rem;
-  background: var(--bg-url) no-repeat top center/cover;
-height: 100vh;
-height: 100%;
 
-}
 
 main {
 
