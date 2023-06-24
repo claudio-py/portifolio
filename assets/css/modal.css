@@ -38,7 +38,13 @@ box-shadow: 2px 2px 5px black;
    top: 10;
    z-index: 100;
    text-shadow: 2px 2px 5px black;
+    transition: color .2s;
   }
+
+ .modal span:hover{
+color: red;
+  }
+
   #carousel button{
 background: none;
 	color: inherit;
