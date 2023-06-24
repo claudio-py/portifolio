@@ -34,21 +34,22 @@ main {
 
 /* Apply overlay scrollbars to the element with the "scroll-container" class */
 .scroll-container {
-	overflow: overlay;
+  overflow: overlay;
 }
 
 /* Style the scrollbar */
 ::-webkit-scrollbar {
-	width: 10px;
+  width: 1rem;
+
 }
 
 ::-webkit-scrollbar-track {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #ffffff37;
-	border-radius: 5px;
+  background-color:#3d3a3a81;
+  border-radius: .5rem;
 }
 .item {
 	display: flex;
