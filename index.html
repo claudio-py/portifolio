@@ -24,7 +24,10 @@
     <link rel="stylesheet" href="./assets/css/acordeon.css" />
     <link rel="stylesheet" href="./assets/css/languages.css" />
     <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      
   </head>
   <body class="scroll-container">
     <main>
@@ -128,20 +131,138 @@
           </ul>
         </div>
       </section>
-      <section class="acordeon">
+      <section  class="acordeon">
+
         <button class="trigger" type="button">
           Certificações
           <i class="ph-bold ph-caret-right"></i>
         </button>
-        <div class="content">
-          <ul class="languages">
-            <li class="loading">
-              <i class="ph ph-circle-notch"></i>loading...
-            </li>
-          </ul>
+        
+        <div id="carousel" class="content">
+          <button onclick="openModal()">
+            <p>clique aqui para expandir</p>
+             </button>
+      <div class="swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="item">
+                  <img src="./assets/img/diopokenon.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="item">
+                  <img src="./assets/img/dioportifolio.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="item">
+                  <img src="./assets/img/discoverconectar.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="item">
+             <img src="./assets/img/discoverfundamentar.jpg" >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="item">
+             <img src="./assets/img/freecodecampdesign.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="item">
+            <img src="assets/img/react.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="item">
+            <img src="./assets/img/rocketseatdevlinks.jpg" alt="">
+            </div>
+          </div>
+
+    </div>
+
+         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-scrollbar"></div>
         </div>
+        </div>
+
       </section>
+
+      <div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+   
+    <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
+     
+    <div class="swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="modal-item">
+                  <img src="./assets/img/diopokenon.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="modal-item">
+                  <img src="./assets/img/dioportifolio.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="modal-item">
+                  <img src="./assets/img/discoverconectar.jpg">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="modal-item">
+             <img src="./assets/img/discoverfundamentar.jpg" >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="modal-item">
+             <img src="./assets/img/freecodecampdesign.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="modal-item">
+            <img src="assets/img/react.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="modal-item">
+            <img src="./assets/img/rocketseatdevlinks.jpg" alt="">
+            </div>
+          </div>
+
+    </div>
+
+         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-scrollbar"></div>
+        </div>
+  </div>
+</div>
+
     </main>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./assets/js/acordeon.js"></script>
   </body>
 </html>

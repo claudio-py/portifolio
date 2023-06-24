@@ -1,0 +1,64 @@
+.modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.681);
+    }
+    .modal-item{
+     width: fit-content;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+    /* Style for the modal content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+     
+    }
+    .modal-item img{
+max-width: 90%;      
+
+box-shadow: 2px 2px 5px black;
+    }
+  .modal span{
+    color: white;
+    font-weight: bold;
+  font-size: 5rem;
+   position: absolute;
+   top: 10;
+   z-index: 100;
+   text-shadow: 2px 2px 5px black;
+  }
+  #carousel button{
+background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ width: 100%;
+ font-weight: bold;
+}
+  #carousel button p:hover{
+    color: yellow;
+  }
+
+  #carousel button p{
+ transition: all .2s;
+box-shadow: 2px 2px 5px black;
+  }
+
