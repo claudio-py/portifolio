@@ -55,11 +55,13 @@ function closeModal() {
 
 // ==========SWITCH BUTTTON ===========
 function toggleMode() {
+	const audio = document.getElementById("selection")
+	console.log(audio)
+	
 	const html = document.documentElement
 
-	// if (html.classList.contains("light")) {
-	//   html.classList.remove("light")
-	// } else {
-	// html.classList.add("light") }
+	
 	html.classList.toggle("light")
+	audio.play()
 }
+
