@@ -1,24 +1,49 @@
 * {
+
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: "Open Sans", sans-serif;
-	color: #fff;
+}
+body *{
+color: var(--text-color);
 }
 
 body {
 	font-size: 1.6rem;
 
-	background: url(../dark-mobile.jpg) no-repeat center center fixed;
+	background: var(--bg-url) no-repeat center center fixed;
 	background-size: cover;
 }
 
+
 :root {
-	font-size: 62.5%;
+
+		font-size: 62.5%;
 	--zoom-in: 1.2;
+  --text-color: white;
+  --bg-url: url(../dark-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.25);
+  --social-color: rgba(255, 255, 255, 0.2);
+  --switch-button: url(../moon-stars2.svg);
 }
+
+.light {
+  --text-color: black;
+  --bg-url: url(../light-mobile.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.25);
+  --social-color: rgba(0, 0, 0, 0.1);
+  --switch-button: url(../sun-button.svg);
+}
+
+
+
 
 @font-face {
 	font-family: "Neue Machina";
@@ -50,63 +75,5 @@ main {
 ::-webkit-scrollbar-thumb {
   background-color:#3d3a3a81;
   border-radius: .5rem;
-}
-.item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: fit-content;
-}
-.item img {
-	width: 50%;
-	object-fit: scale-down;
-}
-.swiper-wrapper {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-.swiper-button-prev,
-.swiper-button-next {
-	color: white !important;
-	font-weight: bold;
-	text-shadow: 2px 2px 5px black;
-	/* transform: scale(1); */
-	transition: all 0.5s;
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-	transform: scale(var(--zoom-in));
-}
-.swiper-slide {
-	display: flex !important;
-	justify-content: center;
-	align-items: center;
-}
-
-#swiper-portifolio .swiper-slide{
-	display: flex;
-	flex-direction: column;
-
-}
-#swiper-portifolio .acordeon-portifolio{
-width: 100%;
- 
- 
-}
-.content-portifolio p{
-text-align: center;
-line-height: 2rem;
-
-}
-.content-portifolio{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 1.5rem;
-}
-.content-portifolio img{
-	max-width: 80%;
 }
 

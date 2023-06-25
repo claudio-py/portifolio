@@ -1,0 +1,58 @@
+#switch {
+  position: relative;
+  width: 64px;
+  height: 24px;
+  margin: 4px auto;
+   
+   
+   
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-button) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: slide-out .8s;
+}
+
+#switch button:hover{
+  outline: 8px solid var(--social-color);
+}
+
+.light #switch button {
+animation: slide-in .8s forwards;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
+  }
+}
