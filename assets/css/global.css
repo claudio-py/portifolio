@@ -94,3 +94,19 @@ width: 100%;
  
  
 }
+.content-portifolio p{
+text-align: center;
+line-height: 2rem;
+
+}
+.content-portifolio{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1.5rem;
+}
+.content-portifolio img{
+	max-width: 80%;
+}
+
