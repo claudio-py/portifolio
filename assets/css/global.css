@@ -83,3 +83,14 @@ main {
 	justify-content: center;
 	align-items: center;
 }
+
+#swiper-portifolio .swiper-slide{
+	display: flex;
+	flex-direction: column;
+
+}
+#swiper-portifolio .acordeon-portifolio{
+width: 100%;
+ 
+ 
+}
