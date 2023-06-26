@@ -3,7 +3,9 @@
   flex-direction: row;
 
 }
-
+.skills section{
+   flex: 1;
+}
 .skills h4 {
   display: flex;
   justify-content: flex-start;

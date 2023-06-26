@@ -1,18 +1,20 @@
 // ========= ACORDEON PRINCIPAL =========
 const acordeonTriggers = document.querySelectorAll(".acordeon .trigger")
-acordeonTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", (e) => {
-    const acordeon = trigger.parentElement
-    const isOpen = acordeon.classList.contains("open")
-    if (isOpen) {
-      acordeon.classList.remove("open")
-    } else {
-      acordeon.classList.add("open")
-    }
-  })
+acordeonTriggers.forEach(trigger => {
+	trigger.addEventListener("click", e => {
+		const acordeon = trigger.parentElement
+		const isOpen = acordeon.classList.contains("open")
+		if (isOpen) {
+			acordeon.classList.remove("open")
+		} else {
+			acordeon.classList.add("open")
+		}
+	})
 })
 // ==============ACORDEON PORTIFOLIO===============
-const acordeonTriggersPortifolio = document.querySelectorAll(".acordeon-portifolio .trigger-portifolio")
+const acordeonTriggersPortifolio = document.querySelectorAll(
+	".acordeon-portifolio .trigger-portifolio"
+)
 acordeonTriggersPortifolio.forEach(trigger => {
 	trigger.addEventListener("click", e => {
 		const acordeon = trigger.parentElement
@@ -29,7 +31,7 @@ const swiper = new Swiper(".swiper", {
 	// Optional parameters
 	direction: "horizontal",
 	loop: true,
-slidesPerView: 1,
+	slidesPerView: 1,
 	// If we need pagination
 	// pagination: {
 	// 	el: ".swiper-pagination"
@@ -42,7 +44,7 @@ slidesPerView: 1,
 	},
 
 	scrollbar: {
-		el: '.swiper-scrollbar'
+		el: ".swiper-scrollbar"
 	}
 })
 // ========MODAL=========
@@ -57,11 +59,9 @@ function closeModal() {
 function toggleMode() {
 	const audio = document.getElementById("selection")
 	console.log(audio)
-	
+
 	const html = document.documentElement
 
-	
 	html.classList.toggle("light")
 	audio.play()
 }
-
